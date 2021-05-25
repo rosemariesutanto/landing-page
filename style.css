@@ -1,0 +1,61 @@
+
+h1 {
+  color: black;
+  font-family: times new roman;
+  font-size: 72px;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+.observation {
+  margin: 72px;
+}
+
+.container {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 52px;
+  margin: 48px 32px;
+}
+
+.container .intro {
+  margin: 125px;
+  background-color: #ffffff94;
+}
+
+.container .observation {
+  margin: 72px;
+}
+
+.container .form {
+  margin: 125px;
+  background-color: #ffffff94;
+  padding: 200px;
+}
+
+button {
+  appearance: none;
+  color: black;
+  font-family: times new roman;
+  font-size: 12px;
+  padding: 12px 24px;
+  border-radius: 150px;
+  background-color: #faebd700;
+  border: 1px solid black;
+}
+
+input, text {
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1px solid black;
+  width: 525px;
+  margin: 36px 28px;
+  font-size: 32px;
+  font-family: times new roman;
+  background-color: #faebd700;
+}
