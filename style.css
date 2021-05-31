@@ -9,12 +9,40 @@ h1 {
   text-align: center;
 }
 
-#headline {
-  padding: 24px;
+#date {
+  position: sticky;
+  align-self: flex-end;
+}
+
+.write-up {
+  position: absolute;
+  color: white;
+  border: 1px solid white;
+  font-family: helvetica;
+  font-size: 16px;
+  padding: 100px 100px;
+  top: 18%;
 }
 
 h2 {
   text-align: center;
+}
+
+path {
+  fill: #fff0;
+}
+
+text {
+  fill: #ffffff;
+  font-size: 92px;
+}
+
+textPath {
+  font-size: 96px;
+  font-size: 96px;
+  font-style: italic;
+  letter-spacing: 13px;
+  font-family: times;
 }
 
 .container {
@@ -24,29 +52,64 @@ h2 {
   background-color: #ebf5f4;
 }
 
-.container .intro {
+.intro {
   background-image: url(conserve.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.image {
+  height: 600px;
+}
+
+.round-img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.set-up {
+  border: 1px solid black;
+}
+
+.image-venue {
+  width: 600px;
 }
 
 .container .main-info {
   min-height: 100vh;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1px 72px 1px 72px;
+  position: absolute;
+  border: 1px solid black;
 }
 
-#write-up {
-  font-size: 24px;
+.middle-container {
+  position: relative;
+  text-align: center;
+  border: 1px solid black;
 }
+
+#date {
+ font-size: 64px;
+}
+
 .container .form {
   height: 50vh;
   margin-bottom: 64px;
+  margin-top: 25%;
+  border: 1px solid black;
 }
 
 .form .footer {

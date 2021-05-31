@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MoonLanding</title>
+    <title>Moon Landing</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="container">
-
+    <div class="banner">
       <div class="intro">
-        <h1 id="headline">WITNESS A ONCE IN A LIFETIME EVENT</h1>
-      </div>
+        <svg width="550" height="550">
+          <g fill="grey"
+              transform="rotate(0 0 0)
+                translate(20 20)
+                skewX(0)
+                scale(1 1)">
+          <defs>
+            <clipPath id="circleView">
+                <circle cx="250" cy="250" r="250" fill="#FFFFFF" />
+            </clipPath>
+          </defs>
+          <image width="500" height="500" xlink:href="hand.jpg" clip-path="url(#circleView)" />
+          </image>
 
-      <div class="main-info">
-        <div id="write-up">
-        <p>This coming Summer, The Eden Conservatory has partnered up with ORINEIN to celebrate the blooming of the century.
-          <br>
-        Housed in its own dedicated chapel, the ancient, sacred flower only blooms at the stroke of midnight, once every 50 years. This year, the blooming of the flower coincides with the upcoming super blood wolf moon, making this an even rarer event.
-          <br>
-        Expect a night of strong mystic energy as we dance under the glow of the moon, and admire one of the wonders of nature.</p>
-        </div>
+            <g fill="grey"
+              transform="rotate(0 0 0)
+                translate(-20 125)
+                skewX(0)
+                scale(1 1)">
+          <path id="curve" fill="transparent" d="M32,0.2C11.9,38.5,0.5,82,0.5,128.2c0,152.1,123.3,275.4,275.4,275.4c129.3,0,237.7-89.1,267.4-209.2" />
+            <text width="500">
+              <textPath xlink:href="#curve">
+                MOON LANDING
+              </textPath>
+            </text>
+          </g>
+        </g>
+        </svg>
       </div>
+    </div>
+
+    <div class="container">
+        <div id="date">
+          <span>26.05.2021</span>
+        </div>
+
+        <div class="middle-container">
+            <img class="image" src="bouquet.jpg">
+            <img class="image" src="orinein.jpg">
+          <div class="write-up">
+            <p>This coming Summer, ORINEIN will be launching her latest single at the Eden Conservatory, to celebrate the blooming of the Queen Of The Night. the ancient, sacred flower only blooms at the stroke of midnight, once every 50 years. This year, the blooming of the flower coincides with the upcoming super flower blood moon, making this an even rarer event of spiritual significance. </p>
+          </div>
+        </div>
+
+        <div class="set-up">
+          <img class="image-venue" src="podium.jpg">
+        </div>
 
       <div class="form">
         <div class="cta">
