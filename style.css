@@ -1,27 +1,98 @@
+html { /* body won't work ¯\_(ツ)_/¯ */
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0px;
+  background-image: url(consdark.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.scroll-container {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-child {
+  scroll-snap-align: start;
 }
 
 h1 {
-  color: black;
-  font-family: times new roman;
-  font-size: 72px;
-  text-align: center;
+  color: #ebf5f4;
+  font-family: 'Turret Road', cursive;;
+  font-size: 54px;
+  font-style: italic;
 }
 
-#date {
+h2 {
+  font-family: 'Turret Road', cursive;
+}
+
+#sticky-date {
+  color: #ebf5f4;
+  font-size: 54px;
+  font-family: 'Turret Road', cursive;
   position: sticky;
-  align-self: flex-end;
+  position: -webkit-sticky;
+  top: 0;
+  align-self: flex-start;
+  z-index: 2;
 }
 
-.write-up {
+#sticky-buy-tickets {
+  color: #ebf5f4;
+  font-size: 84px;
+  font-family: 'Turret Road', cursive;
+  position: fixed;
+  position: -webkit-sticky;
+  bottom: 0;
+  align-self: flex-end;
+  z-index: 2;
+  margin-right: 12px;
+}
+
+
+.orinein-header-1 {
+  margin: -99px 1px 1px -64px;
+}
+
+.write-up-1 {
+  width: 50%;
+  height: 50%;
   position: absolute;
   color: white;
   border: 1px solid white;
-  font-family: helvetica;
-  font-size: 16px;
-  padding: 100px 100px;
-  top: 18%;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 48px 48px;
+  padding-right: 196px;
+  background-color: #ffffff29;
+  left: 48px;
+}
+
+.orinein-header-2 {
+  text-align: end;
+  margin: -99px -196px 1px 1px;;
+}
+
+.write-up-2 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  color: white;
+  border: 1px solid white;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 48px 48px;
+  padding-right: 196px;
+  background-color: #ffffff29;
 }
 
 h2 {
@@ -40,33 +111,69 @@ text {
 textPath {
   font-size: 96px;
   font-size: 96px;
-  font-style: italic;
   letter-spacing: 13px;
-  font-family: times;
+  font-family: 'Turret Road', cursive;
+}
+
+#intro-org {
+  font-size: 60px;
+  font-style: italic;
+  letter-spacing: 5px;
+  font-family: 'Turret Road', cursive;
+}
+
+#intro-date {
+  font-size: 36px;
+  font-style: italic;
+  letter-spacing: 5px;
+  font-family: 'Turret Road', cursive;
 }
 
 .container {
   display:flex;
   flex-direction:column;
   align-items: center;
-  background-color: #ebf5f4;
+  background-image: linear-gradient(to bottom, #ff000000 , #4b738280, #4c122c);
 }
 
 .intro {
-  background-image: url(conserve.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-snap-align: start;
 }
 
-.image {
+#sunburst {
+  position: fixed;
+  height: 1000px;
+}
+
+img {
   height: 600px;
+}
+
+.image-orinein1 {
+  background-image: url(bouquet.jpg);
+  background-size: cover;
+  height: 650px;
+  width: 950px;
+  left: 27px;
+  position: absolute;
+  opacity: 0.85;
+}
+
+.image-orinein2 {
+  background-image: url(hand.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 450px;
+  position: absolute;
+  right: 24px;
+  z-index: 1;
+  border: 1px solid white;
 }
 
 .round-img {
@@ -76,12 +183,37 @@ textPath {
   object-fit: cover;
 }
 
-.set-up {
+.set-up-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
   border: 1px solid black;
+  scroll-snap-align: start;
 }
 
-.image-venue {
-  width: 600px;
+.image-venue-1 {
+  background-image: url(portal.jpg);
+  background-size: cover;
+  width: 1000px;
+  height: 650px;
+  position: absolute;
+  right: 0px;
+  opacity: 0.85;
+}
+
+.image-venue-2 {
+  background-image: url(podium.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 650px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 
 .container .main-info {
@@ -95,46 +227,56 @@ textPath {
   border: 1px solid black;
 }
 
-.middle-container {
+.orinein-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
   position: relative;
   text-align: center;
   border: 1px solid black;
+  scroll-snap-align: start;
 }
 
-#date {
- font-size: 64px;
-}
-
-.container .form {
+.form {
   height: 50vh;
   margin-bottom: 64px;
   margin-top: 25%;
-  border: 1px solid black;
+  position: relative;
+  scroll-snap-align: start;
 }
 
-.form .footer {
-  text-align: center;
+.cta {
+  color: #ebf5f4;
 }
 
 button {
   appearance: none;
-  color: black;
+  color: #ebf5f4;
   font-family: times new roman;
   font-size: 12px;
   padding: 12px 24px;
   border-radius: 150px;
   background-color: #faebd700;
-  border: 1px solid black;
+  border: 1px solid #ebf5f4;
 }
 
 input, text {
+  color: #ebf5f4;
   border-top: 0px;
   border-right: 0px;
   border-left: 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ebf5f4;
   width: 525px;
   margin: 36px 28px;
   font-size: 32px;
   font-family: times new roman;
   background-color: #faebd700;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  color: #ebf5f4;
 }
