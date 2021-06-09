@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200&display=swap" rel="stylesheet">
   </head>
   <body>
+
   <div class="scroll-container">
     <div class="banner">
       <div class="intro">
@@ -70,7 +71,37 @@
       <div class="container">
 
         <span id="sticky-date">26.05.2021/22:00-LATE</span>
-        <span id="sticky-buy-tickets">BUY TICKETS</span>
+        <button id="sticky-buy-tickets">BUY TICKETS</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="ticket-form-title">Please fill in the details below:</h2>
+            <form>
+              <label for="fname">First Name*:</label>
+              <input type="text" id="fname" name="fname">
+              <br>
+              <label for="lname">Last Name*:</label>
+              <input type="text" id="lname" name="lname">
+              <br>
+              <label for="email">Email*:</label>
+              <input type="text" id="email" name="email">
+              <br>
+              <label for="phonenumber">Phone Number*:</label>
+              <input type="text" id="phonenumber" name="phonenumber">
+              <br>
+              <label for="terms">
+                <input id="terms" type="checkbox" name="terms">
+                I agree to the Terms and Conditions
+              </label>
+              <br>
+                <p id="ticket">Standard Entry Ticket (sent via email) - £21.50/ticket</p>
+              <br>
+                <p>TOTAL: </p>
+              <br>
+              <button id="submit-btn" type="submit">PAY £££</button>
+            </form>
+          </div>
+        </div>
 
           <div class="orinein-section">
             <div class="image-orinein1">
@@ -104,7 +135,7 @@
                 <form>
                   <input type="text" value="+ email +">
                   <div style="text-align: center;">
-                    <button type="submit">SUBMIT</button>
+                    <button id="submit-btn" type="submit">SUBMIT</button>
                   </div>
                 </form>
               </div>
@@ -113,7 +144,9 @@
             <div class="footer">
               <p>Landing page by Rosemarie Sutanto, 2021.</p>
             </div>
+
       </div>
   </div>
-  </body>
+</body>
+<script type="text/javascript" src="scripts.js"></script>
 </html>
